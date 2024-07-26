@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS document */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    background-image: radial-gradient(at center, #253770, #382569);
+}
+
+#container {
+    min-height: calc(100% - 10em);
+}
+
+#title {
+    color: white;
+    background-color: #2b4499;
+    font: 2.5em "Helvetica", "Candara", "Arial";
+    width: fit-content;
+    top: 20px;
+    left: calc(50% - 230px);
+    padding: 5px 25px 5px 25px;
+    border-radius: 20px;
+    text-shadow: 5px 5px 5px #000000;
+    box-shadow: 0px 5px 10px #220a36;
+    position: absolute;
+    transition: 3s ease-in-out 0.1s;
+    user-select: None;
+}
+
+#calculator {
+    user-select: None;
+    top: 98px;
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 600px;
+    background-image: radial-gradient(at center, #281f58 70%, #193444);
+    border-radius: 30px;
+    box-shadow: 10px 10px 25px black;
+    position: absolute;
+}
+
+#skull {
+    top: 120px;
+    left: calc(50% + 300px);
+    position: absolute;
+}
+
+#calculator-interface {
+    margin: 17px;
+    width: 560px;
+    height: 565px;
+    background-image: linear-gradient(to top right, #131f30, #1d2b3d);
+    position: relative;
+    border-radius: 15px;
+}
+
+#calculator-screen {
+    position: absolute;
+    background-image: radial-gradient(at center, #375077 25%, #2d446b);
+    border: #213353 inset 4px;
+    width: 504px;
+    height: 80px;
+    top: 6%;
+    left: 25.2px;
+    border-radius: 5px;
+}
+
+#screen-top, #screen-bottom {
+    position: absolute;
+    width: 100%;
+}
+
+#screen-top {
+    top: 0;
+    height: 30%;
+    background-color: #2e4366;
+}
+
+#screen-bottom {
+    top: 30%;
+    height: calc(70% - 5px);
+    background-color: #293c5e;
+    border-top: #31486e solid 5px;
+}
+
+#nums-top, #nums-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Arial", "Helvetica", "sans-serif", "Century Gothic";
+    text-align: right;
+}
+
+#nums-top {
+    color: #e0e0e0b0;
+    font-size: 18px;
+    padding: 2px 0;
+    user-select: text;
+}
+
+#nums-bottom {
+    color: #e0e0e0;
+    font-size: 43px;
+    user-select: text;
+}
+
+#functional-container {
+    position: absolute;
+    width: 520px;
+    height: 60px;
+    top: 23.5%;
+    left: 27px;
+}
+
+#nums-container {
+    background-image: linear-gradient(to top right, #16253b, #1e3047);
+    position: absolute;
+    border-radius: 10px;
+    width: 299.6px;
+    height: 61%;
+    top: 37%;
+    left: 11.2px;
+}
+
+#arithmetic-container {
+    position: absolute;
+    left: 327.8px;
+    width: 215px;
+    top: calc(53% - 90px);
+}
+
+.button {
+    margin: 5px;
+    font-family: "helvetica", "century gothic", "arial";
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    transition: 0.17s ease-in-out 0.01s;
+}
+
+.button:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#functional-container .button:active,
+#nums-container .button:active,
+#arithmetic-container .button:active{
+    transition: 0.01s ease-in-out 0.01s;
+    transform: scale(1);
+}
+
+#functional-container .button:active {
+    background-color: #182a53;
+}
+
+#arithmetic-container .button:active {
+    background-color: #273e61;
+}
+
+#nums-container .button:active {
+    background-color: #1c385e;
+}
+
+#functional-container .button {
+    border: #3e568a dashed 3px;
+    font-size: 2.2em;
+    width: 70px;
+    height: 55px;
+}
+
+#skull img {
+    user-select: none;
+    transition: transform 1s ease-in-out 1s;
+};
+
+#skull, #functional-container #del1 img {
+    user-select: none;
+}
+
+#functional-container #del1 img {
+    width: 40px;
+    height: 40px;
+}
+
+#euler, #factorial, #pi {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.numbers-line {
+    margin: 13px 0 20px 4%;
+    clear: both;
+}
+
+#nums-container .button {
+    background-color: #243b5a;
+    font-size: 2.2em;
+    width: 80px;
+    height: 70px;
+}
+
+#nums-container #clear {
+    font-size: 1.8em;
+    background-color: #291246;
+    border: 1px solid #1103244d;
+}
+
+#nums-container #clear:active {
+    background-color: #3a1764;
+}
+
+#functional-container #del1,
+#functional-container #ce {
+    font-size: 1.3em;
+    background-color: #472a69;
+    border: 1px solid #280e4d80;
+}
+
+#functional-container #del1:active,
+#functional-container #ce:active {
+    background-color: #462075;
+}
+
+#nums-container #comma {
+    font-size: 3em;
+    align-items: flex-start;
+}
+
+#arithmetic-container .button {
+    background-color: #24355a;
+    font-size: 2.2em;
+    width: 95px;
+    height: 55px;
+}
+
+#arithmetic-container #equalTo {
+    background-color: #3a5285;
+    width: calc(100px * 2);
+    height: 65px;
+}
+
+#arithmetic-container #equalTo:active {
+    background-color: #314e8b;
+    transform: scale(1.09);
+}
+
+footer {
+    background-image: linear-gradient(to right, #19171b 20%, #18181a 20%);
+    height: 18rem;
+    width: 99.1vw;
+    overflow: hidden;
+}
+
+#logo-container {
+    float: left;
+    padding: 25px 50px 0 30px;
+}
+
+#logo-container img {
+    width: 265px;
+    height: auto;
+}
+
+.footer-third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.footer-third:last-child {
+    margin-right: 0;
+}
+
+.footer-third h1 {
+    font-family: "arial", "sans-serif";
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-weight: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-third a {
+    font-family: "arial", "sans-serif";
+    font-size: 18px;
+    color: #8d8a96;
+    display: table;
+    font-weight: 200;
+    width: fit-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease-in-out 0.01s;
+}
+
+.footer-third a:hover {
+    color: white;
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+.footer-third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.footer-third span {
+    color: white;
+    font-family: "arial", "sans-serif";
+    font-size: 18px;
+    font-weight: 200;
+    display: block;
+    width: 105%;
+}
+
+.footer-third li i {
+    font-size: 65px;
+    padding-right: 15px;
+}
+
+/* --- -Responsive alterations- ---*/
+
+@media (max-height: 1040px) {
+    #container {min-height: calc(10vh + 700px);}
+    footer {width: 118.9em;}
+}

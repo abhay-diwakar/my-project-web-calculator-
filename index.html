@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Web Calculator</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link type="image/png" rel="shortcut icon" href="imgs/favicon.png">
+</head>
+
+<body>
+    <div id="container">
+        <section id="main">
+            <header><h1 id="title">Simple Web Calculator</h1></header>
+            <img src="imgs/limit-screen.png" id="skull" draggable="false">
+            <div id=calculator>
+                <div id="calculator-interface">
+                    <div id="calculator-screen">
+                        <div id="screen-top">
+                            <p id="nums-top"></p>
+                        </div>
+                        <div id="screen-bottom">
+                            <p id="nums-bottom">0</p>
+                        </div>
+                    </div>
+                    <div id="functional-container">
+                        <div id="negate" class="button">+/-</div>
+                        <div id="pi" class="button">π</div>
+                        <div id="euler" class="button">e</div>
+                        <div id="factorial" class="button">n!</div>
+                        <div id="ce" class="button">CE</div>
+                        <div id="del1" class="button">
+                            <img id="del2" src="imgs/delete.png" draggable="false">
+                        </div>
+                    </div>
+                    <div id="nums-container">
+                        <div class="numbers-line">
+                            <div id="num7" class="button">7</div>
+                            <div id="num8" class="button">8</div>
+                            <div id="num9" class="button">9</div>
+                        </div>
+                        <div class="numbers-line">
+                            <div id="num4" class="button">4</div>
+                            <div id="num5" class="button">5</div>
+                            <div id="num6" class="button">6</div>
+                        </div>
+                        <div class="numbers-line">
+                            <div id="num1" class="button">1</div>
+                            <div id="num2" class="button">2</div>
+                            <div id="num3" class="button">3</div>
+                        </div>
+                        <div class="numbers-line">
+                            <div id="clear" class="button">C</div>
+                            <div id="num0" class="button">0</div>
+                            <div id="comma" class="button">,</div>
+                        </div>
+                    </div>
+                    <div id="arithmetic-container">
+                        <div id="squareRoot" class="button">√</div>
+                        <div id="cubeRoot" class="button">∛</div>
+                        <div id="divide" class="button">÷</div>
+                        <div id="multiply" class="button">x</div>
+                        <div id="substract" class="button">-</div>
+                        <div id="sum" class="button">+</div>
+                        <div id="overX" class="button">1/x</div>
+                        <div id="squarePower" class="button">x²</div>
+                        <div id="equalTo" class="button">=</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div id="logo-container">
+            <img src="imgs/calculator_img.png">
+        </div>
+        <div class="footer-third">
+            <h1>Need help?</h1>
+            <a id="terms">Terms &amp; Conditions</a>
+            <a id="privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-third">
+            <h1>More</h1>
+            <a href="https://www.britannica.com/technology/Pascaline"
+            target="_blank">The First Calculator</a>
+            <a href="https://edtechmagazine.com/k12/article/2012/11/calculating-firsts-visual-history-calculators"
+            target="_blank">Evolution of Calculators</a>
+            <a href="https://github.com/LucioFex/Simple_Web_Calculator/"
+            target="_blank">This Calculator</a>
+        </div>
+        <div class="footer-third">
+            <h1>Follow Me</h1>
+            <li><a href="https://github.com/LucioFex" target="_blank">
+                <i class="fa fa-github"></i></a></li>
+            <li><a href="https://twitter.com/LucioFex" target="_blank">
+                <i class="fa fa-twitter"></i></a></li>
+            <li><a id="email"><i class="material-icons">
+                &#xe0d0;</i></a></li>
+            <span>
+                This is a simple arithmetic web calculator, with some implementations of a scientific one.
+            </span>
+        </div>
+    </footer>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
